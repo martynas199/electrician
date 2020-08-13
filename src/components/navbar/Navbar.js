@@ -13,6 +13,7 @@ class Navbar extends Component{
 
     render() {
         return(
+
             <nav className="NavbarItems">
                   <h1 className="navbar-logo">Sparky <i class="fas fa-bolt" aria-hidden="true"></i></h1>
                   <div className="menu-icon" onClick={this.handleClick}>
@@ -29,7 +30,7 @@ class Navbar extends Component{
                           )
                       })}
                    </ul>   
-                   <Button>Sign Up</Button>         
+                   {/* <Button>Sign Up</Button>          */}
              </nav>
         )
     }
