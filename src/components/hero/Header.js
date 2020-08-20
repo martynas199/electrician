@@ -1,7 +1,9 @@
 import React from "react";
-import { Button } from "../Button";
 
-import "./Hero.css";
+import { Button } from "../Button";
+import { FeaturesList } from "../other/FeatureList";
+
+import "./Hero.scss";
 
 
 
@@ -10,48 +12,15 @@ const Header = () => {
     <div className="hero-head">
       <div class="l-flex-parent">
         <div class="l-flex-child l-grid-half">
-          <div class="example-item  col-left">
+          <div class="example-item  hero-col-left">
             <h2>Electrical Solutions For Cambridgeshire.</h2>
 
             <Button className="btn btn--large">BOOK NOW</Button> 
 
-            <ul>
-              <li>
-              <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="chckbox-icon"
-                >
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-                <p className="feature-list">Available in Cambridgeshire</p>
-              </li>
-              <li>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="chckbox-icon"
-                >
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                </svg>
-                <p className="feature-list">MIT Accredited</p>
-              </li>
-              <li>99.99% Uptime SLA</li>
-            </ul>
+            <FeaturesList>Available in Cambridgeshire</FeaturesList>
+            <FeaturesList>MIT Accredited</FeaturesList>
+            <FeaturesList>Available 24/7</FeaturesList>
+
           </div>
         </div>
 

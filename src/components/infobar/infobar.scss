@@ -31,32 +31,32 @@
 @text-color:#3c763d;*/
 
 
-.section-notif {
+.info-content {
   color: #feae71;
   pointer-events: auto;
   position: relative;
   width: 200px;
   margin: 0 25px;
 }
-.section-notif .notif-icon {
+.info-content .notif-icon {
   display: inline-block;
   position: absolute;
   font-size: 16px;
   top: 3px;
 }
-.section-notif .notif-content {
+.info-content .notif-content {
   display: inline-block;
   height: 30px;
   width: 100%;
   margin-left: 25%;
 }
-.section-notif .notif-title {
+.info-content .notif-title {
   font-family: 'Roboto Condensed',sans-serif;
   font-weight: bold;
   display: inline-block;
   font-size: 14px;
 }
-.section-notif .notif-msg {
+.info-content .notif-msg {
   color: #3e3e3e;
   font-family: 'Roboto Condensed',sans-serif;
   display: inline-block;

@@ -1,27 +1,27 @@
-:root{
-    --primary: #3acbf7;
-}
+@import '../scss/variables.scss';
 
 
 .btn{
     padding: 8px 20px;
     outline: none;
-    border: none;
+    border: 1px solid ;
     cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0 32px 0 ;
 }
 
 
 .btn:hover{
     padding: 8px 20px;
     transition: all 0.3s ease-out;
-    background: #fff;
-    color: #116c88;
+    background: #2f0c75;
+    color: #fff;
     transition: 250ms;
 }
 
 
 .btn--primary{
-    background-color: var(--primary);
+    background-color: $atlantis;
 }
 
 .btn--outline{

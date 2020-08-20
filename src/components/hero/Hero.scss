@@ -1,3 +1,6 @@
+@import '../scss/variables.scss';
+
+
 .hero-head{
     padding: 4rem;
 }
@@ -5,36 +8,9 @@
 .l-grid-half {
   width: 50%;
 }
-.col-left{
-    margin-right: auto;
+.hero-col-left{
+    margin: auto;
     max-width: 42rem;
-}
-
-.col-left ul {
-    margin-top: 3rem;
-    line-height: 2;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-.col-left li {
-    display: flex;
-    align-items: center;
-    --text-opacity: 1;
-    color: rgba(74,85,104,var(--text-opacity));
-
-}
-
-.feature-list {
-  padding-left: 0.5rem;
-    font-weight: 500;
-    --text-opacity: 1;
-    color: rgba(74,85,104,var(--text-opacity));
-
-    display: block;
-    font-family: Inter,system-ui;
 }
 
 .l-flex-parent {
@@ -82,13 +58,13 @@
     max-width: 24rem;
 
     position: absolute;
-    bottom: 0px;
+    bottom: 4px;
     left: 0px;
     right: 0px;
     z-index: 20;
     margin-left: -4rem;
-    background-color: rgb(60, 13, 153);
-    color: rgb(203, 213, 224);
+    background-color: $Blue-Bayoux;
+    color: $Whitee;
     font-weight: 500;
 
     transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
@@ -104,7 +80,7 @@
 .img-card-quote{
     width: 3rem;
     height: 3rem;
-    color: rgb(245, 101, 101);
+    color: $Cornflower;
     --transform-translate-x: -50%;
     --transform-translate-y: -1.25rem;
     opacity: 1;
@@ -119,14 +95,14 @@
     transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
 }
 
-.col-left h2 {
+.hero-col-left h2 {
   font-family: Inter,system-ui;
   font-weight: 900;
   font-size: 4rem;
   text-align: left;
     --text-opacity: 1;
     margin: 0;
-    color: rgba(60,13,153,var(--text-opacity));
+    color: #222326;
     line-height: 1.375;
     display: block;
     margin-block-start: 0.83em;
@@ -141,9 +117,4 @@
 }
 
 
-.chckbox-icon{
-  width: 1.25rem;
-  height: 1.25rem;
-  --text-opacity: 1;
-  color: rgba(100,21,255,var(--text-opacity));
-}
+

@@ -5,7 +5,7 @@ const StyledIcon = styled.i``;
 
 const InfoItem = (props) => {
   return (
-    <section class="animated section-notif section-notif-success">
+    <section class="info-content section-notif-success">
       <div className="notif-icon">{props.children}</div>
       <div className="notif-content">
         <span className="notif-title">{props.title}</span>

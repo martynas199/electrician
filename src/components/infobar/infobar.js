@@ -1,13 +1,12 @@
 import React from "react";
-// import faker from 'faker';
-import "./infobar.css";
+import "./infobar.scss";
 import InfoItem from "./InfoItems";
-import Header from "../hero/Header";
 
 
 const CommentDetail = () => {
   return (
     <div className="nav-info">
+      
       <InfoItem title="OUR LOCATION" content="Peterborough, England">
         <span class="fa-stack">
           <i class="far fa-circle fa-stack-2x"></i>
