@@ -3,7 +3,7 @@ import "./SimpleCard.scss";
 import styled from  "styled-components";
 import emergencyElectrician from "../../images/emergency-electrician.jpg";
 import imgt from "../../images/repair-150x150.png";
-
+import inspec from "../../images/inspection.jpg";
 
 export default ({
   cards = [
@@ -20,7 +20,7 @@ export default ({
       url: "https://google.com"
     },
     {
-      imageSrc: imgt,
+      imageSrc: inspec,
       title: "Electrical Inspections and Testing",
       description: "We can assist with regular electrical testing and inspections on those electrical appliances we all use day in, day out.",
       url: "https://reddit.com"

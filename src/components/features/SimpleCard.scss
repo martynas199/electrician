@@ -14,9 +14,9 @@
   border-radius: 0.1rem;
   flex: 1;
   min-width: 290px;
-  -webkit-box-shadow: 0 30px 18px #777;
-  -moz-box-shadow: 0 30px 18px #777;
-  box-shadow: 0 30px 18px #777;
+  -webkit-box-shadow: 0 4px 18px #777;
+  -moz-box-shadow: 0 4px 18px #777;
+  box-shadow: 0 4px 10px #777;
   -webkit-transform: rotate(-8deg);
   -moz-transform: rotate(-8deg);
   -o-transform: rotate(-8deg);
@@ -30,7 +30,7 @@
 
 @media (min-width: 900px) {
   .news-card {
-    height: 30rem;
+    height: 28rem;
   }
 }
 
