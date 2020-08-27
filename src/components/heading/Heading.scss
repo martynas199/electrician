@@ -1,0 +1,28 @@
+
+
+.text-center{
+    text-align: center;
+}
+
+.services{
+    background-color: rgb(100, 21, 255);
+      color: rgb(247, 250, 252);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      --transform-translate-x: 0;
+      --transform-translate-y: 0;
+      --transform-rotate: 0;
+      --transform-skew-x: -12deg;
+      --transform-skew-y: 0;
+      --transform-scale-x: 1;
+      --transform-scale-y: 1;
+      transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+      display: inline-block;
+  }
+
+  .under {
+    background-color: #0e0d70;
+    height: 2px;
+    -webkit-box-shadow: 8px 4px 5px 0 rgba(7,18,104,.95);
+    box-shadow: 8px 4px 5px 0 rgba(7,18,104,.95);
+}

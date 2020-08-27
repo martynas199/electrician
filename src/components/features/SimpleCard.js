@@ -2,8 +2,20 @@ import React from "react";
 import "./SimpleCard.scss";
 import styled from  "styled-components";
 import emergencyElectrician from "../../images/emergency-electrician.jpg";
-import imgt from "../../images/repair-150x150.png";
 import inspec from "../../images/inspection.jpg";
+import lighting from "../../images/light.jpg";
+import pat from "../../images/pat.jpeg";
+import rewire from "../../images/wire.jpg";
+import install from "../../images/install.jpg";
+
+import Electrician from "../../images/Electrician.png";
+import Emergency from "../../images/Emergency.png";
+import Lighting from "../../images/Lighting.png";
+import PatTesting from "../../images/Pat-testing.png";
+import Repair from "../../images/Repair.png";
+import ReWiring from "../../images/Re-Wiring.png";
+
+
 
 export default ({
   cards = [
@@ -11,36 +23,42 @@ export default ({
       imageSrc: emergencyElectrician,
       title: "Emergency Electrical Services",
       description: "On hand to help with almost any electrical emergency in the west, north west, north and central London area.",
+      icon: Emergency,
       url: "https://timerse.com"
     },
     {
-      imageSrc: imgt,
+      imageSrc: install,
       title: "Appliance Installation & Repair",
       description: "Highly experienced in a wide array of electrical appliance repairs and installations, covering both domestic and commercial jobs.",
+      icon: Repair,
       url: "https://google.com"
     },
     {
       imageSrc: inspec,
       title: "Electrical Inspections and Testing",
       description: "We can assist with regular electrical testing and inspections on those electrical appliances we all use day in, day out.",
+      icon: Electrician,
       url: "https://reddit.com"
     },
     {
-      imageSrc: imgt,
+      imageSrc: rewire,
       title: "Electrical Rewiring Services",
       description: "To meet modern safety standards, electrical rewiring is essential if your property is over 25 years old and has never been rewired.",
+      icon: ReWiring,
       url: "https://timerse.com"
     },
     {
-      imageSrc: imgt,
+      imageSrc: lighting,
       title: "Light Fitting & Repairing Services",
       description: "If you’re in need of any light fitting or repairing, be that in your home, business or outdoors, speak to Emergency Electrician Camden.",
+      icon: Lighting,
       url: "https://google.com"
     },
     {
-      imageSrc: imgt,
+      imageSrc: pat,
       title: "PAT Testing",
       description: "At Emergency Electrician Camden, all our electricians are fully qualified, NICEIC-approved and experienced in carrying out full PAT tests.",
+      icon: PatTesting,
       url: "https://reddit.com"
     },
     
@@ -61,6 +79,7 @@ export default ({
    */
   return (
     <div className="content-wrapper">
+      
           {cards.map((card, i) => (
   
   <div class="news-card">
@@ -68,7 +87,8 @@ export default ({
     <img src={ card.imageSrc } alt="" class="news-card__image" />
     <div class="news-card__text-wrapper">
       <h2 class="news-card__title">{card.title}</h2>
-      <div class="news-card__post-date">Jan 29, 2018</div>
+    <img src={ card.icon } alt="" class="serv-icon" />
+
       <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">{ card.description }</p>
         <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
