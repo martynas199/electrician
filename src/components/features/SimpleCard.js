@@ -1,6 +1,5 @@
 import React from "react";
 import "./SimpleCard.scss";
-import styled from  "styled-components";
 import emergencyElectrician from "../../images/emergency-electrician.jpg";
 import inspec from "../../images/inspection.jpg";
 import lighting from "../../images/light.jpg";
@@ -64,11 +63,11 @@ export default ({
     
   ],
   linkText = "Learn More",
-  heading = "",
-  subheading = "",
-  description = "",
-  imageContainerCss = null,
-  imageCss = null
+  // heading = "",
+  // subheading = "",
+  // description = "",
+  // imageContainerCss = null,
+  // imageCss = null
 }) => {
   /*
    * This componets accepts a prop - `cards` which is an array of object denoting the cards. Each object in the cards array can have the following keys (Change it according to your need, you can also add more objects to have more cards in this feature component):
@@ -79,11 +78,10 @@ export default ({
    */
   return (
     <div className="content-wrapper">
-      
           {cards.map((card, i) => (
   
   <div class="news-card">
-    <a href="#" class="news-card__card-link"></a>
+    <a href={card.url} class="news-card__card-link"> </a>
     <img src={ card.imageSrc } alt="" class="news-card__image" />
     <div class="news-card__text-wrapper">
       <h2 class="news-card__title">{card.title}</h2>
@@ -91,7 +89,7 @@ export default ({
 
       <div class="news-card__details-wrapper">
           <p class="news-card__excerpt">{ card.description }</p>
-        <a href="#" class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+        <a href={card.url} class="news-card__read-more">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
   </div>

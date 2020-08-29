@@ -2,16 +2,6 @@ import React from "react";
 import './FeaturesList.scss'
 
 
-const COLOR = [
-  'red',
-  'blue'
-]
-
-const SIZES = [
- 
-  'btn--medium',
-  'btn--large'
-]
 
 export const FeaturesList = ({
   children

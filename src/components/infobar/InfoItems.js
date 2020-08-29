@@ -1,7 +1,4 @@
 import React from "react";
-import styled, { css } from "styled-components";
-
-const StyledIcon = styled.i``;
 
 const InfoItem = (props) => {
   return (

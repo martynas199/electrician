@@ -25,7 +25,7 @@
 }
 
 .hero-img{
-    max-width: 100%;
+    // max-width: 100%;
     width: 24rem;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
@@ -66,7 +66,7 @@
     background-color: $Blue-Bayoux;
     color: $Whitee;
     font-weight: 500;
-
+    text-align: center;
     transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
     font-size: 0.875rem;
     line-height: 1.625;
@@ -116,5 +116,72 @@
     border-radius: 5px;
 }
 
+
+
+@media screen and (max-width: 1098px){
+
+  .hero-col-left h2 {
+
+    font-size: 3.25rem;
+
+  }
+}
+
+
+@media screen and (max-width: 960px){
+
+  .hero-head{
+    padding: 2rem;
+}
+.hero-col-left{
+  margin: 0 0 40px 0;
+}
+  .l-flex-parent {
+
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .l-grid-half {
+    width: 90%;
+}
+
+  .l-flex-child {
+    display:flex; 
+    justify-content: center;
+  }
+  
+  .hero-col-left h2 {
+    font-family: Inter,system-ui;
+    font-weight: 900;
+    font-size: 2.25rem;
+    text-align: left;
+      --text-opacity: 1;
+      margin: 0;
+      color: #222326;
+      line-height: 1.375;
+      display: block;
+      margin-block-start: 0.23em;
+      margin-block-end: 0.3em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+  }
+
+  .hero-img{
+    max-width: 100%;
+
+}
+
+.img-card {
+
+  margin: 0;
+}
+}
 
 
