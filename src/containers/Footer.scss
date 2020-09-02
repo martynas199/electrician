@@ -1,164 +1,141 @@
-.row{
+.flexbox-container{
   display: flex;
+  background-color: rgba(51,54,69,1);
+  justify-content: space-around;
+  flex-wrap: wrap;
+// flex-direction: row;
+padding-top: 20px;
 }
 
-ul {
-  margin: 0px;
-  padding: 0px;
+.flexbox-item{
+margin: 30px;
 }
-.footer-section {
-background: #151414;
-position: relative;
+
+.flexbox-item-1{
+max-width: 400px;
+
+  height: auto;
+  flex-grow: 2;
 }
-.footer-cta {
-border-bottom: 1px solid #373636;
+
+.flexbox-item-2{
+max-width: 250px;
+
+  height: auto;
+  flex-grow: 1;
 }
-.single-cta i {
-color: #ff5e14;
-font-size: 30px;
-float: left;
-margin-top: 8px;
+.flexbox-item-3{
+  height: auto;
+max-width: 250px;
+
+  flex-grow: 1;
 }
-.cta-text {
-padding-left: 15px;
-display: inline-block;
+
+@media (max-width: 900px) {
+
+  .flexbox-container{
+    justify-content: flex-start;
+  
+  }
+  
+  .flexbox-item{
+  margin-bottom: 50px;
+  // justify-content: center;
+
+  }
+  
+  .flexbox-item-1{
+    max-width: 350px;
+    text-align: left;
+    margin: 0 0 20px 30px;
+  }
+
 }
-.cta-text h4 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 2px;
+
+.footer ul{
+  list-style: none;
 }
-.cta-text span {
-color: #757575;
-font-size: 15px;
+
+.footer li{
+  margin: 8px 0;
 }
-.footer-content {
-position: relative;
-z-index: 2;
+
+.footer a{
+  text-decoration: none;
+  color: white;
+      font-family: "Roboto Condensed",sans-serif;
 }
-.footer-pattern img {
-position: absolute;
-top: 0;
-left: 0;
-height: 330px;
-background-size: cover;
-background-position: 100% 100%;
+
+.footer p{
+  color: white;
 }
-.footer-logo {
-margin-bottom: 30px;
+
+.footer h3{
+  color: white;
 }
-.footer-logo img {
-  max-width: 200px;
+
+.footer a:hover{
+  border-bottom: 1px solid rgba(252, 250, 250, 1);
+transition: border-bottom 400ms;
 }
-.footer-text p {
-margin-bottom: 14px;
-font-size: 14px;
-    color: #7e7e7e;
-line-height: 28px;
+
+
+
+
+.social-container{
+  text-align: center;
+  background-color: #333645;
+  padding: 20px 0;
+
 }
-.footer-social-icon span {
-color: #fff;
-display: block;
-font-size: 20px;
-font-weight: 700;
-font-family: 'Poppins', sans-serif;
-margin-bottom: 20px;
+
+.social-container h2{
+  color: white;
 }
-.footer-social-icon a {
-color: #fff;
-font-size: 16px;
-margin-right: 15px;
+
+.footer-social-icons {
+  width: 350px;
+  display:flex;
+  margin: 0 auto;
+  justify-content: space-around;
 }
-.footer-social-icon i {
-height: 40px;
-width: 40px;
-text-align: center;
-line-height: 38px;
-border-radius: 50%;
+.social-icon {
+  font-size: 1.5rem;;
+  margin: 0.3em;
 }
-.facebook-bg{
-background: #3B5998;
+ul.social-icons {
+  margin-top: 10px;
 }
-.twitter-bg{
-background: #55ACEE;
+.social-icons li {
+  display: inline;
 }
-.google-bg{
-background: #DD4B39;
+
+.fa-facebook-f{
+  color: #4267B2;
 }
-.footer-widget-heading h3 {
-color: #fff;
-font-size: 20px;
-font-weight: 600;
-margin-bottom: 40px;
-position: relative;
+
+.fa-twitter{
+  color: #1DA1F2;
+
 }
-.footer-widget-heading h3::before {
-content: "";
-position: absolute;
-left: 0;
-bottom: -15px;
-height: 2px;
-width: 50px;
-background: #ff5e14;
+
+.fa-youtube{
+  color: #FF0000;
+
 }
-.footer-widget ul li {
-display: inline-block;
-float: left;
-width: 50%;
-margin-bottom: 12px;
-}
-.footer-widget ul li a:hover{
-color: #ff5e14;
-}
-.footer-widget ul li a {
-color: #878787;
-text-transform: capitalize;
-}
-.subscribe-form {
-position: relative;
-overflow: hidden;
-}
-.subscribe-form input {
-width: 100%;
-padding: 14px 28px;
-background: #2E2E2E;
-border: 1px solid #2E2E2E;
-color: #fff;
-}
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #ff5e14;
-  padding: 13px 20px;
-  border: 1px solid #ff5e14;
-  top: 0;
-}
-.subscribe-form button i {
-color: #fff;
-font-size: 22px;
-transform: rotate(-6deg);
-}
-.copyright-area{
-background: #202020;
-padding: 25px 0;
-}
-.copyright-text p {
-margin: 0;
-font-size: 14px;
-color: #878787;
-}
-.copyright-text p a{
-color: #ff5e14;
-}
-.footer-menu li {
-display: inline-block;
-margin-left: 20px;
-}
-.footer-menu li:hover a{
-color: #ff5e14;
-}
-.footer-menu li a {
-font-size: 14px;
-color: #878787;
-}
+
+.fa-instagram{
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;}
+
+
+  /*==================== 
+	Widgets 
+====================== */
+
+.widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin: 20px 0;position: relative;width: 20%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
