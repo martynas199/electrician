@@ -1,3 +1,5 @@
+
+
 .flexbox-container{
   display: flex;
   background-color: rgba(51,54,69,1);
@@ -139,3 +141,65 @@ ul.social-icons {
 .widget-title span {background: #839FAD none repeat scroll 0 0;display: block; height: 1px;margin: 20px 0;position: relative;width: 20%;}
 .widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
 .widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+
+
+
+.footer-bottom-container{
+  background-color: rgb(62, 66, 82);
+
+  .right a{
+    text-decoration: none;
+    color: #df1b3a;
+        font-family: "Roboto Condensed",sans-serif;
+  }
+
+}
+
+.left {
+  padding: 1em;
+  text-align: left;
+}
+
+.right {
+  padding: 1em;
+  text-align: right;    
+}
+
+.parent {
+  justify-content: space-around;
+  display: flex;
+  overflow: hidden;
+  color: #fff;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+
+#parent5 {
+  > div {
+      flex: 1;
+      margin: 0 20px 0 20px;
+  }
+}
+
+svg.nectar-shape-divider{
+  width: 100%;
+  height: 150px;
+}
+
+path.wave-one {
+opacity: 0.15;
+}
+
+path.wave-two {
+  opacity: 0.3;
+  fill: #fff;
+  
+  }
+  
+  path.wave-three {
+   fill: #fff;
+    }
+    
+  
