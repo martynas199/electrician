@@ -23,42 +23,42 @@ export default ({
       title: "Emergency Electrical Services",
       description: "On hand to help with almost any electrical emergency in the west, north west, north and central London area.",
       icon: Emergency,
-      url: "https://timerse.com"
+      url: "Emergency"
     },
     {
       imageSrc: install,
       title: "Appliance Installation & Repair",
       description: "Highly experienced in a wide array of electrical appliance repairs and installations, covering both domestic and commercial jobs.",
       icon: Repair,
-      url: "https://google.com"
+      url: "Installation"
     },
     {
       imageSrc: inspec,
       title: "Electrical Inspections and Testing",
       description: "We can assist with regular electrical testing and inspections on those electrical appliances we all use day in, day out.",
       icon: Electrician,
-      url: "https://reddit.com"
+      url: "Inspections"
     },
     {
       imageSrc: rewire,
       title: "Electrical Rewiring Services",
       description: "To meet modern safety standards, electrical rewiring is essential if your property is over 25 years old and has never been rewired.",
       icon: ReWiring,
-      url: "https://timerse.com"
+      url: "Rewiring"
     },
     {
       imageSrc: lighting,
       title: "Light Fitting & Repairing Services",
       description: "If you’re in need of any light fitting or repairing, be that in your home, business or outdoors, speak to Emergency Electrician Camden.",
       icon: Lighting,
-      url: "https://google.com"
+      url: "Light"
     },
     {
       imageSrc: pat,
       title: "PAT Testing",
       description: "At Emergency Electrician Camden, all our electricians are fully qualified, NICEIC-approved and experienced in carrying out full PAT tests.",
       icon: PatTesting,
-      url: "https://reddit.com"
+      url: "Pat"
     },
     
   ],

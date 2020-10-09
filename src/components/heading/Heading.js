@@ -2,9 +2,9 @@ import React from "react";
 import "./Heading.scss";
 
 
-const Heading = ({ children }) => {
+const Heading = ( props ) => {
     return (
-<div className="text-center mt5 mb2"><h1><span className="text-bold">Our </span><span className="services">Services</span></h1></div>
+<div id={props.id} className="text-center mt5 mb2"><h1><span className="text-bold">{props.first} </span><span className="services">Services</span></h1></div>
 
 
     )

@@ -1,0 +1,106 @@
+// Variables ====================
+$purple: #44485c;
+
+$body-font-family: 'Roboto', sans-serif;
+$heading-font-family: 'Roboto Slab', serif;
+$heading-font-weight: 300;
+$subhead-font-weight: 300;
+$link-font-weight: 500;
+
+// Color Mixin ====================
+
+// -----------------------
+// VARIABLES
+// $base - Base color for your palette.
+// $variant - Component to color, e.g. background.
+// -----------------------
+// Currently only works with light-on-dark schemes.
+// The mixin takes $base and lightens it by an
+// amount depending on the $variant entered.
+@mixin color($base: white, $variant: null) {
+  $c-background: $base;
+  $c-text-major: lighten($base, 40%);
+  $c-text-minor: lighten($base, 30%);
+  $c-divider: lighten($base, 10%);
+  $c-nav-background: lighten($base, 7%);
+  $c-nav-hover: lighten($base, 48%);
+  @if $variant==background {
+    background: $c-background;
+  }
+  @elseif $variant==text-major {
+    color: $c-text-major;
+  }
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $heading-font-family;
+}
+
+// Text and layout styles for the skins
+.skin-wrapper {
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 2.5rem;
+
+  hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+  }
+  h2 {
+    margin: 2rem 0 0;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  time {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 1rem;
+    /* letter-spacing: 0.01rem; */
+  }
+}
+
+// Doesn't use the mixin
+// Still need to make this work with light schemes
+
+
+// Purple skin
+.skin.purple {
+  @include color($purple, background);
+  @include color($purple, text-major);
+  header > p {
+    @include color($purple, text-minor);
+  }
+  header > nav a {
+    @include color($purple, text-minor);
+    &:hover {
+      @include color($purple, nav-bg);
+      @include color($purple, nav-hover);
+    }
+  }
+  hr {
+    @include color($purple, divider);
+  }
+}
+
+.hero-arrow {
+    position:relative;
+    height:320px !important;
+    width:100% !important;
+}
+
+.hero-arrow:after {
+    content:'';
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    margin-left: -30px;
+    width: 0;
+    height: 0;
+    border-top: solid 30px #44485c;
+    border-left: solid 30px transparent;
+    border-right: solid 30px transparent;
+}

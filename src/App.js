@@ -5,7 +5,7 @@ import CommentDetail from "./components/infobar/infobar";
 import Header from "./components/hero/Header";
 import ServicesCard from "./components/features/SimpleCard";
 import Heading from "./components/heading/Heading";
-import FooterContainer from "./components/footer/footer";
+import FooterContainer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <CommentDetail />
       <Navbar />
       <Header />
-      <Heading />
+      <Heading id="services" first="Our" second="Services"/>
       <ServicesCard />
       <FooterContainer />
     </div>

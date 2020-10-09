@@ -6,7 +6,6 @@ const InfoItem = (props) => {
       <div className="notif-icon">{props.children}</div>
       <div className="notif-content">
         <span className="notif-title">{props.title}</span>
-        <br />
         <span className="notif-msg">{props.content}</span>
       </div>
     </section>

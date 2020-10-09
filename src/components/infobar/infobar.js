@@ -13,7 +13,7 @@ const CommentDetail = () => {
           <i class="fas fa-map-marker-alt fa-stack-1x"></i>
         </span>
       </InfoItem>
-      <InfoItem title="CALL US" content="01722 203380">
+      <InfoItem title="CALL US" content="01722 2033809">
         <span class="fa-stack">
           <i class="far fa-circle fa-stack-2x"></i>
           <i class="fas fa-phone-alt fa-stack-1x"></i>

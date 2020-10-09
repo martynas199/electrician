@@ -5,15 +5,21 @@ import "./Services.scss";
 const Services = (props) => {
   return (
     <section class="services-page">
+      
          <img src={props.srcPath} alt="" class="services-img" />
-         <div className="services-content">
-         <div className="notif-icon">{props.children}</div>
-      <div className="notif-content">
+
+
+         <div className={"services-content"}>
+         <div className="header">{props.children}</div>
+      <div className="content">
         <span className="notif-title">{props.title}</span>
         <br />
         <span className="notif-msg">{props.content}</span>
       </div>
          </div>
+
+
+
       <div class="fusion-layout-column fusion_builder_column fusion_builder_column_1_1  fusion-one-full fusion-column-first fusion-column-last 1_1">
 					<div class="fusion-column-wrapper">
           <div class="nectar-shape-divider-wrap no-color " data-front="" data-style="waves_opacity_alt" data-position="bottom"><svg class="nectar-shape-divider" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" preserveAspectRatio="none">  
